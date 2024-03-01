@@ -1,5 +1,5 @@
 // ext.js
-// job  : Receives message from service worker context
+// job  : Sends message to service worker, gets a response
 // lic  : https://opensource.org/license/mit
 // repo : https://github.com/dofufa/chrome-message-passing-2
 console.log('ext-content-script');
