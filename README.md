@@ -9,12 +9,12 @@ Greetings! 👋
 This Chrome browser extension example demonstrates simple message passing between two contexts: the **content script** context and the **service worker** context.
 
 ```
-*********                ***********
-*content* message------>>* service *
-*script *                * worker  *
-*       *<<----response  *         *
-*********                ***********
-sender                   receiver
+***********                ***********
+* content * message------>>* service *
+* script  *                * worker  *
+*         *<<----response  *         *
+***********                ***********
+sender                     receiver
 ```
 
 ### References
