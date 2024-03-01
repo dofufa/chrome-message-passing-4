@@ -1,20 +1,20 @@
 # chrome-message-passing-4
-Basic Chrome extension message passing between service worker (as sender) and content script (as receiver)
+Basic Chrome extension message passing between content script (as sender) and service worker (as receiver)
 
 ### Summary
 
 
-Hello! 👋
+Salutations! 👋
 
 This Chrome browser extension example demonstrates simple message passing between two contexts: the **content script** context and the **service worker** context.
 
 ```
 *********                ***********
-*content*<<-----message  * service *
+*content* message------>>* service *
 *script *                * worker  *
-*       * response----->>*         *
+*       *<<----response  *         *
 *********                ***********
-receiver                 sender
+sender                   receiver
 ```
 
 ### References
