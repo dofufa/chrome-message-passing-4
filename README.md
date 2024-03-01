@@ -4,7 +4,7 @@ Basic Chrome extension message passing between content script (as sender) and se
 ### Summary
 
 
-Salutations! 👋
+Greetings! 👋
 
 This Chrome browser extension example demonstrates simple message passing between two contexts: the **content script** context and the **service worker** context.
 
