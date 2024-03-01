@@ -4,14 +4,15 @@
 // repo : https://github.com/dofufa/chrome-message-passing-2
 console.log('ext-service-worker');
 
-chrome.action.onClicked.addListener((tab) => {
-	const message = { name: 'from-service-worker', greeting:'howdy!' };
-	console.log(tab);
-	console.log(tab.id);
-	console.log(message);
-	chrome.tabs.sendMessage(tab.id, {'message': message}, (response) => {
-  	console.log('response received by service-worker, from content-script')
-  	console.log('response: %o', response);
-		console.log();
+chrome.runtime.onMessage.addListener(
+	function (request, sender, sendResponse) {
+		const reply = {
+			name: 'from-service-worker',
+			sriracha: true
+		};
+	  console.log('message received by service worker, from content script')
+		console.log('sender: %o', sender);
+		console.log('request: %o', request);
+    console.log();
+		sendResponse(reply);
 	});
-});
